@@ -110,7 +110,7 @@ func (sc *Screencast) Start(sessionHandle dbus.ObjectPath, options ...map[string
 	if err != nil {
 		return fmt.Errorf("failed to get response: %w", err)
 	}
-
+	//TODO: Handle parse
 	fmt.Println(handle)
 
 	return nil
@@ -125,3 +125,6 @@ func (sc *Screencast) Close(sessionHandle dbus.ObjectPath) error {
 	}
 	return nil
 }
+
+// TODO: Implement other methods
+// pipeWire
