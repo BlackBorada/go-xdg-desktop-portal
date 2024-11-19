@@ -58,11 +58,11 @@ func (r *Request) Request() (*Response, error) {
 		return nil, fmt.Errorf("portal request failed with code: %d", responseCode)
 	}
 
-	// Получаем результат
 	result, ok := signal.Body[1].(map[string]dbus.Variant)
 	if !ok {
 		return nil, fmt.Errorf("invalid result format")
 	}
 
+	close(signals)
 	return &Response{Response: result}, nil
 }

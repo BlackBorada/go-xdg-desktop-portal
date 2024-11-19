@@ -21,7 +21,7 @@ func main() {
 		"reason":               dbus.MakeVariant("test"),
 	}
 
-	userInfo, err := account.GetUserInformation(conn, options)
+	userInfo, err := account.GetUserInformation(conn, "", options)
 	if err != nil {
 		log.Fatal(err)
 	}
