@@ -41,5 +41,7 @@ func (s *Screenshot) GetScreenshot(window string, options ...map[string]dbus.Var
 	}
 
 	fmt.Println(res)
+
+	//TODO: response parsing
 	return nil, nil
 }
