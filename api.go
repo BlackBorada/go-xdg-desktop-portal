@@ -43,6 +43,8 @@ const (
 
 	ScreenCastInterface = "org.freedesktop.portal.ScreenCast"
 
+	ScreenshotInterface = "org.freedesktop.portal.Screenshot"
+
 	RequestInterface = "org.freedesktop.portal.Request"
 
 	SessionInterface = "org.freedesktop.portal.Session"
